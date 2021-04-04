@@ -1,0 +1,152 @@
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  background-color: #FFE4C4;
+}
+
+.return_button {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  right: 0px;
+}
+
+
+ nav.large_menu {
+  font-size: 12px;
+  background: #CD853F;
+  height: 100vh;
+  position: fixed;
+   top: 0;
+   left: 0;
+  min-height: 400px;
+  width: 250px;
+}
+
+ nav.large_menu ul {
+  list-style-type: none;
+}
+
+ nav.large_menu li {
+  padding-top: 10px;
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+nav.large_menu a:hover {
+  color: #FFAB40;
+}
+
+.nav-link {
+  color: #EEEEEE;
+}
+
+.list_title {
+  font-size: 28px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+main {
+  position: relative;
+  margin-left: 250px;
+}
+
+a {
+  color: #FFAB40;
+  text-decoration: none;
+}
+
+
+pre {
+  margin-left: 15px;
+  margin-right: 15px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  border-radius: 5px;
+  font-family: monospace;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.code_highlight {
+  color: #000000;
+  font-family: monospace;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+.author {
+  display: block;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+h2 {
+  display: inline;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+h3 {
+  color: #000000;
+}
+
+h4 {
+  padding-left: 10px;
+}
+
+.demo {
+  min-width: 315px;
+  max-width: 315px;
+  align-self: center;
+}
+
+.method {
+  color: #000000;
+}
+/* Landscape Mobile */
+@media only screen and (max-width: 768px) {
+  nav.large_menu {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  
+  main {
+    margin-left: 0;
+  }
+}
+/* Portrait Mobile */
+@media only screen and (max-width: 420px) {
+  main {
+    margin-left: 0;
+  }
+}

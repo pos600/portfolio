@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Exo|Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title"><u>Survey Form</u></h1>
+  <div class="container">
+    <center><p id="description">This will help us understand you and better provide you the service you need!</p>
+    <p style="margin: 0; font-size: 12px">Blanks with * are required.</p></center>
+    <form id="survey-form" action="" method="get" accept-charset="utf-8">
+      <div class="row">
+        <div class="left">
+          <label for="gender" style="padding: 15px 0 0 0;">Gender:</label>
+        </div>
+        <div class="right">
+          <ul>
+                  <li>
+                    <label>Male<input name="gender" value="1"  type="radio"></label>
+                  </li>
+                  <li>
+                    <label>Female<input name="gender" value="2"  type="radio"></label>
+                  </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="name" style="padding: 5px 0 0 0;" >* Name: </label>
+        </div>
+        <div class="right">
+          <input type="text" name="firstname" id="name" placeholder="Justin Wentz" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="email" style="padding: 5px 0 0 0;">* Email: </label>
+        </div>
+        <div class="right">
+          <input type="email" name="email" id="email" placeholder="justinW42069@example.com" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="age" style="padding: 15px 0 0 0;"> Age: </label>
+        </div>
+        <div class="right">
+          <ul>
+                  <li>
+                    <label>10 - 30<input name="age" value="1" type="radio"></label>
+                  </li>
+                  <li>
+                    <label>31 - 50<input name="age" value="2" type="radio"></label>
+                  </li>
+                  <li>
+                    <label>51 - 80<input name="age" value="3" type="radio"></label>
+                  </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="when" style="padding: 5px 0 0 0;">* When did you last visit Saint West Hospital?</label>
+        </div>
+        <div class="right">
+          <select name="when" required>
+            <option value="" selected>--Select an option--</option>
+            <option value="ThisMonth">This month</option>
+            <option value="2-3Months">2-3 months ago</option>
+            <option value=">4Months">Atleast 4 months ago</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="like" style="padding: 8px 0 0 0;">What service did you like most in our Hospital?</label>
+        </div>
+        <div class="right">
+          <ul id="like">
+                  <li><label><input name="like" value="1" type="checkbox">Provision of Services</label></li>
+                  <li><label><input name="like" value="2" type="checkbox">Facilities</label></li>
+                  <li><label><input name="like" value="3" type="checkbox">Customer Service</label></li>
+                  <li><label><input name="like" value="4" type="checkbox">Cleanliness</label></li>
+                  <li><label><input name="like" value="5" type="checkbox">None</label></li>
+              </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="dislike" style="padding: 8px 0 0 0;">What service did you dislike in our Hospital?</label>
+        </div>
+        <div class="right">
+          <ul id="dislike">
+                  <li><label><input name="dislike" value="1" type="checkbox">Provision of Services</label></li>
+                  <li><label><input name="dislike" value="2" type="checkbox">Facilities</label></li>
+                  <li><label><input name="dislike" value="3" type="checkbox">Customer Service</label></li>
+                  <li><label><input name="dislike" value="4" type="checkbox">Cleanliness</label></li>
+                  <li><label><input name="dislike" value="5" type="checkbox">None</label></li>
+              </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="score" style="padding: 5px 0 0 0;">* How would you rate us from 1 to 10?</label>
+        </div>
+        <div class="right">
+          <input type="number" name="score" id="score" placeholder="Score from 0 up to 10" min="0" max="10" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="recommendation" style="padding: 15px 0 0 0;">* Would you recommend our Hospital? </label>
+        </div>
+        <div class="right">
+          <ul>
+                  <li>
+                    <label>Definitely<input name="recommendation" value="1" type="radio" required></label>
+                  </li>
+            <li>
+                    <label>Maybe<input name="recommendation" value="2" type="radio" required></label>
+                  </li>
+                  <li>
+                    <label>Not Sure<input name="recommendation" value="3" type="radio" required></label>
+                  </li>
+                  <li>
+                    <label>Not at All<input name="recommendation" value="4" type="radio" required></label>
+                  </li>
+              </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <label for="feedback" style="padding: 5px 0 0 0;"> Any suggestions from you? </label>
+        </div>
+        <div class="right">
+          <textarea name="feedback" placeholder="Type here...."></textarea>
+        </div>
+      </div>
+      <div class="row" style="justify-content: flex-end;">
+        <input type="submit" id="submit" name="submit" value="Submit">
+      </div>
+    </form>
+    
+  </div>
+</body>
+</html>
