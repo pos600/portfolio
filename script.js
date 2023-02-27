@@ -59,14 +59,3 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
-$(document).ready(function () {
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (window.location.hash && isChrome) {
-        setTimeout(function () {
-            var hash = window.location.hash;
-            window.location.hash = "";
-            window.location.hash = hash;
-        }, 300);
-    }
-});

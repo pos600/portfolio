@@ -1,0 +1,109 @@
+a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.header{
+
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* overflow solution v */
+    z-index: 5;
+
+}
+
+.logo{
+
+    font-size: 30px;
+    margin-left: 30px;
+    width: 175px;
+    cursor: pointer;
+
+}
+
+.menu, .menu a{
+
+    display: flex;
+
+}
+
+.menu a{
+
+    flex: 1;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+/* button animations */
+.menu a, .icons{
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+}
+
+
+.menu a:hover, .menu a:focus, .menu a:active{
+
+    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: grey;
+
+}
+
+.menu a.home{
+
+    color: grey;
+    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.icons img:hover, .icons img:focus, .icons img:active{
+
+    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+/* ===================== */
+
+.icons{
+
+    display: flex;
+    flex-direction: end;
+    width: 200px;
+    margin-right: 20px;
+
+}
+
+.icons img{
+
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    cursor: pointer;
+
+}
